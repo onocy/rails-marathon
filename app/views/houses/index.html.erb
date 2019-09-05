@@ -1,0 +1,8 @@
+<% @houses.each do |house|%>
+  <div>
+    <%= link_to(house.name, house)%>
+    <p><%=house.author%></p>
+    <p><%=house.motto%></p>
+  </div>
+<% end %>
+<%= link_to("Add New House", new_house_path) %>
